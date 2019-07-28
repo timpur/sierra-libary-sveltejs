@@ -12,5 +12,5 @@ export { default as Container } from "./Container.svelte";
 export { default as Row } from "./Row.svelte";
 export { default as Col } from "./Col.svelte";
 
-import * as stores from "./stores";
-export { stores };
+import * as forms from "./forms";
+export { forms };

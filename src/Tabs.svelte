@@ -10,7 +10,7 @@
   const onChange = index => {
     if (index === current) return;
     if (auto) current = index;
-    dispatch("change", { index, value: tabs[index] });
+    dispatch("change", { index, tab: tabs[index] });
   };
 </script>
 

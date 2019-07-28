@@ -114,8 +114,10 @@ export const formControl = (name, ...fieldControls) => {
   const formStore = derived(
     [formErrorStore, ...fieldControls],
     ([formErrorState, ...fieldStates]) => {
-      const fieldsInError = fieldStates.some(getError);
-      const fieldsIsValidating = fieldStates.some(getValidating);
+      const fieldsInError = fieldStates.some(state => getError(state));
+      const fieldsIsValidating = fieldStates.some(state =>
+        getValidating(state)
+      );
       return {
         ...formErrorState,
         summary: {

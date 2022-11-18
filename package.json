@@ -22,7 +22,7 @@
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addons": "^5.1.9",
-    "@storybook/svelte": "^5.1.9",
+    "@storybook/svelte": "^6.5.13",
     "babel-loader": "^8.0.6",
     "rollup": "^1.11.0",
     "rollup-plugin-node-resolve": "^4.0.0",
